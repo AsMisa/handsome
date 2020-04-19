@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alvin Blog-搜狗图床</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="layui/layui.all.js"></script>
+</head>
+<body>
+	
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>Alvin Blog-搜狗图床在线上传</legend>
+</fieldset>
+<div style="padding: 20px; background-color: #F2F2F2;">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">使用说明</div>
+                <div class="layui-card-body">
+                    可上传本地图片为搜狗图片链接<br>
+                    CDN加速很不错的，图片压缩也没那么严重
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">文件支持</div>
+                <div class="layui-card-body" style="word-wrap: break-word;">
+                    PNG，JPG，GIF等常见图片格式文件<br>
+                    文件大小限制10MB
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header">在线上传：</div>
+                <div style="padding: 10px">
+                    <div id="test1" style="padding: 45px;">
+                        <button type="button" class="layui-btn" style="margin: 0 auto;display: -webkit-box;;border-radius: 30px;">
+                            <i class="layui-icon">&#xe67c;</i>上传文件
+                        </button>
+                        <p style="text-align: center;padding: 7px;color: #666;">支持直接拖拽到此处上传</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header">上传结果：</div>
+                <div class="layui-card-body">
+                    <div id="hide" style="flex-wrap: wrap;">
+                        <table class="layui-table" lay-size="sm"><thead><tr><th>链接</th></tr></thead><tbody id="data"><tr><td></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-card-header" style="text-align: center">
+<script src="js/clipboard.min.js"></script>
+</body>
+</html>
